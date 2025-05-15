@@ -9,7 +9,11 @@
 </head>
 <body>
     <header class="cabeçalho">
-       
+       <button id="btn">INFORMAÇÕES</button>
+<div id="info" style="display:none;">Texto das informações</div>
+<script>
+  btn.onclick = () => info.style.display = info.style.display === 'none' ? 'block' : 'none';
+</script>
 <h1 style="text-align:center; color:red;">ExpoLondrina</h1>
 <img src="img/WhatsApp Image 2025-05-15 at 11.03.20 (1).jpeg" 
 class="mb-3" width="563" height="278" loading="lazy"
