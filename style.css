@@ -89,20 +89,20 @@ fonte {
   height: 12px;
 }
 #info {
-  display: none;              /* mantém oculto inicialmente */
-  text-align: center;         /* centraliza o texto */
+  display: none;
+  text-align: center;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  color: #333;
-  background-color: #f9f9f9;  /* fundo claro suave */
+  color: #c62828; /* tom de vermelho escuro elegante */
+  background-color: #fff5f5;
   padding: 15px 20px;
   margin: 15px auto;
-  max-width: 400px;           /* largura limitada para ficar bonitinho */
+  max-width: 420px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  line-height: 1.6;           /* espaço entre linhas */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
 }
 
 #info p {
-  margin: 8px 0;              /* espaçamento entre parágrafos */
+  margin: 8px 0;
 }
