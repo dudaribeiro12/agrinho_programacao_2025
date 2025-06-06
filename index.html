@@ -317,4 +317,73 @@
       alt="Imagem principal ExpoLondrina"
     />
     <p class="creditos">
-      <a href="https://www.flickr.com/photos/agenciabrasilia/53765054880" target="_blank"
+      <a href="https://www.flickr.com/photos/agenciabrasilia/53765054880" target="_blank" rel="noopener noreferrer">
+        Agência Brasília via Flickr
+      </a>
+    </p>
+  </div>
+
+  <section class="descricao" aria-label="Descrição do evento ExpoLondrina 2025">
+    <p>
+      A <strong>ExpoLondrina</strong> é um dos maiores e mais completos eventos agropecuários da América Latina, que combina tradição e inovação. O evento é um espaço vibrante de negócios, cultura e entretenimento para todas as idades.
+    </p>
+
+    <ul>
+      <li><strong>Conexão com o campo:</strong> O agro é a essência que conecta todas as pessoas ao campo, presente no dia a dia, do café ao combustível.</li>
+      <li><strong>Transformação diária:</strong> O agronegócio transforma a vida de todos de forma contínua e silenciosa.</li>
+      <li><strong>Inovação e sustentabilidade:</strong> A ExpoLondrina 2025 destaca como tecnologia e sustentabilidade estão guiando as transformações no agro.</li>
+      <li><strong>Impacto social:</strong> O agro é o ponto de partida onde inovação e tradição se encontram, impactando diretamente a sociedade.</li>
+    </ul>
+
+    <p class="highlight">Experimente o agro em cada momento do seu dia!</p>
+  </section>
+
+  <div class="agrinho">
+    <img src="img/img1.jpg" alt="Projeto Agrinho" />
+    <a href="https://agrinho-green-one.vercel.app" target="_blank" rel="noopener noreferrer">
+      <button>Venha conhecer mais sobre o projeto Agrinho 2025</button>
+    </a>
+  </div>
+
+  <p class="creditos" style="margin-top: 5px;">
+    Imagem principal: gerada com IA pelo ChatGPT (OpenAI).
+  </p>
+
+  <p class="fonte">
+    Fonte:
+    <a href="https://www.expolondrina.com.br" target="_blank" rel="noopener noreferrer">
+      www.expolondrina.com.br
+    </a>
+  </p>
+
+  <footer>
+    <p>Desenvolvido por Maria Eduarda Ribeiro Inczmionka</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const info = document.getElementById('info');
+
+    btn.addEventListener('click', () => {
+      if (info.style.display === 'block') {
+        info.style.display = 'none';
+      } else {
+        info.style.display = 'block';
+      }
+    });
+
+    // Animação de fade-in progressivo nas imagens e elementos da seção "agrinho"
+    const agrinhoImages = document.querySelectorAll('.agrinho img, .agrinho button');
+
+    agrinhoImages.forEach((el, i) => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      }, i * 400 + 1500); // atraso progressivo, começando 1.5s após o carregamento
+    });
+  </script>
+</body>
+</html>
